@@ -8,7 +8,8 @@ Here we will create guides to get you started contributing to CodeEdit.
 
 * [Getting Started](./Getting-Started)
 * [Code Style](./Code-Style)
-* [Troubleshooting](./Troubleshooting)
 * [Contribution Guide](https://github.com/CodeEditApp/CodeEdit/blob/main/CONTRIBUTING.md)
+* [Developer Docs](.Developer-Docs)
+* [Troubleshooting](./Troubleshooting)
 
 > This wiki is still work-in-progress and will be updated over time!
