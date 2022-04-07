@@ -102,7 +102,7 @@ Before submitting a pull request, make sure your code is well documented.
 
 ### Use Modules
 
-When implementing a new feature please create a new standalone module in `CodeEditModules`. See [Project Structure](/Getting-Started.md#project-structure) for more information.
+When implementing a new feature please create a new standalone module in `CodeEditModules`. See [Project Structure](./Getting-Started#project-structure) for more information.
 
 ### Remove Comments and `print`
 
