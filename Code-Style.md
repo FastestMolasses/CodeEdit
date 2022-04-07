@@ -150,3 +150,11 @@ custom_rules:
 ```
 
 > Note that we're using `--strict` mode both locally in the project as well as in our `CI` environment which runs our tests on submission of pull requests.
+
+### Recommendation
+
+We recommend to change the following setting in Xcode:
+
+* `Preferences > Text Editing > Editing` and enable:
+  - [x] Automatically trim trailing whitespace
+    - [x] Including whitespace-only lines
