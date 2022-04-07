@@ -1,0 +1,1 @@
+Placeholder for the `Getting Started` page.
