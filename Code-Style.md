@@ -156,5 +156,5 @@ custom_rules:
 We recommend to change the following setting in Xcode:
 
 * `Preferences > Text Editing > Editing` and enable:
-  - [x] Automatically trim trailing whitespace
-    - [x] Including whitespace-only lines
+  * [x] Automatically trim trailing whitespace
+    * [x] Including whitespace-only lines
