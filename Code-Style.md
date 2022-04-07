@@ -116,7 +116,7 @@ In your final code there should not be any commented code or `print()` statement
 
 Same goes for `// swiftlint:disable` comments.
 
-### External Libraries
+### External Dependencies
 
 We only use a handful of external libraries. Don't add external dependencies without prior discussion in issues or on [Discord](https://discord.gg/vChUXVf9Em).
 
