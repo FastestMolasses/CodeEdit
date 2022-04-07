@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to our guide to getting started on contributing to CodeEdit. This guide will help you understand the basic structure of the app and where to begin with. If you get stuck somewhere please have a look at the [troubleshooting](/Troubleshooting.md) section or join the discussion on our [Discord Server](https://discord.gg/vChUXVf9Em).
+Welcome to our guide to getting started on contributing to CodeEdit. This guide will help you understand the basic structure of the app and where to begin with. If you get stuck somewhere please have a look at the [troubleshooting](./Troubleshooting) section or join the discussion on our [Discord Server](https://discord.gg/vChUXVf9Em).
 
 ## Fork and Clone
 
