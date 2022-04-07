@@ -4,6 +4,12 @@ Every programmer has their own preference on what coding style to use. But when 
 
 > See the [SwiftLint](#swiftlint) section to see how we test the coding style in our project.
 
+## Swift
+
+`CodeEdit` is entirely written using `Swift`. We decided to choose `SwiftUI` for most parts of the app where it makes sense. Though some parts require the implementation of `AppKit` code due to mostly customizability and performance reasons.
+
+We currently are targeting `macOS 12` since it enables us to use many crucial new `SwiftUI` libraries. But we don't see this as a problem since once we reach the final release stage `macOS 13` will most likely be out already. Further most developers tend to keep their machines on the latest firmware version anyways - if not even firmware in beta stage.
+
 ## Basics
 
 We use the standard code style used in the [Swift Language Guide](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html). If you're not familiar please have a read!
@@ -109,6 +115,14 @@ When implementing a new feature please create a new standalone module in `CodeEd
 In your final code there should not be any commented code or `print()` statements. Please remove them.
 
 Same goes for `// swiftlint:disable` comments.
+
+### External Libraries
+
+We only use a handful of external libraries. Don't add external dependencies without prior discussion in issues or on [Discord](https://discord.gg/vChUXVf9Em).
+
+This is because we want to keep our dependencies as slim as possible. In certain cases it might make sense to use an external library though.
+
+> Keep in mind that most of UI related extensions or convenience methods can easily be implemented in a internal module/package.
 
 ## SwiftLint
 
