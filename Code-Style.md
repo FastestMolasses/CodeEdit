@@ -144,6 +144,11 @@ We basically use the standard configuration with a handful of changes. Our curre
 disabled_rules:
   - todo
   - trailing_comma
+  - nesting
+
+type_name:
+  excluded:
+    - ID
 
 identifier_name:
   excluded:
