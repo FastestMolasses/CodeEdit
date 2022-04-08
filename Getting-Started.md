@@ -6,9 +6,9 @@ Welcome to our guide to getting started on contributing to CodeEdit. This guide 
 
 In order to contribute you first have to fork the repository by tapping the **Fork** button on the top left. This will create a copy in your own repository list.
 
-After you forked the repository you can clone your fork to your local machine. For starters we recommend using a tool with a GUI like [GitHub Desktop](https://desktop.github.com).
+After you forked the repository you can clone your fork to your local machine. For starters we recommend using a tool with a GUI like [GitHub Desktop](https://desktop.github.com) or [Fork](https://git-fork.com).
 
-## Basic Structure
+## Open the Project in Xcode
 
 In order to contribute you first have to understand roughly how everything works together in our project.
 First of all you need to open the directory where you cloned the repository to in Finder. Inside that directory you will find a couple of files and sub-directories.
@@ -19,7 +19,7 @@ You want to open the `CodeEdit.xcworkspace` file in Xcode.
 
 > Note: Do not open the `CodeEdit.xcodeproj` file since it will not include our internal modules which are required to build & run CodeEdit.
 
-### Project Structure
+## Project Structure
 
 After opening the project in Xcode you will find the following top level folders:
 
@@ -34,7 +34,7 @@ If you add a new feature please do so by adding a new module library to `CodeEdi
 
 > Note: Some parts of the app are still inside the `CodeEdit` main target. We are currently transitioning those to their own modules inside `CodeEditModules`.
 
-### Modules Libraries
+## Module Libraries
 
 The structure of the libraries found in `CodeEditModules` looks like this:
 
@@ -75,3 +75,9 @@ Lastly add the newly created library to the main project:
 2. Select `CodeEdit` under `Targets` in the left sidebar.
 3. Under `General` find the `Frameworks, Libraries & Embedded Content` section.
 4. Click the `+` icon on the bottom of the list and select your newly created module.
+
+## Next Up
+
+### • [Code Style](./Code-Style) – _(conventions to keep up a uniform code style)_
+
+### • [Developer Docs](./Developer-Docs) – _(Swift developer documentation for CodeEdit)_
