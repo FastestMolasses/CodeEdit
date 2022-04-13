@@ -2,7 +2,7 @@
 
 Here we will create guides to get you started contributing to CodeEdit.
 
-![CodeEdit Banner](https://user-images.githubusercontent.com/806104/163065825-4a073889-5bdc-4ea5-84ca-b197dabb7d11.png)
+![CodeEdit Banner](https://user-images.githubusercontent.com/806104/163101427-4787970f-c78b-4a98-a29b-1ef26b62fd40.png)
 
 ## Topics
 
