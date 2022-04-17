@@ -10,6 +10,8 @@ After you forked the repository you can clone your fork to your local machine. F
 
 ## Open the Project in Xcode
 
+> **Important:** Make sure you have at least `macOS 12 Monterey` installed since our deployment target is `macOS 12`. Otherwise the project will not build and run properly!
+
 In order to contribute you first have to understand roughly how everything works together in our project.
 First of all you need to open the directory where you cloned the repository to in Finder. Inside that directory you will find a couple of files and sub-directories.
 
