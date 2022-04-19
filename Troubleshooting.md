@@ -46,10 +46,16 @@ You may have noticed that SwiftUI does not work out of the box with `CodeEdit`.
 
 When working on a specific module in `CodeEditModules` just change the run target to the specific module, then make a clean build and Previews should work instantly.
 
+<img width="193" alt="Screen Shot 2022-04-19 at 03 31 43" src="https://user-images.githubusercontent.com/9460130/163902910-d99487b0-e7cd-4948-84d8-061c864b93d7.png">
+
 ### Previews in `CodeEdit``
 
 When working on the main target of CodeEdit it becomes a little more complicated: Go to `CodeEdit > Targets > CodeEdit > Signing & Capabilities > Signing`.
 
-There select your personal `Team`and change the `Signing Certificate`to `Development`.
+<img width="455" alt="Screen Shot 2022-04-19 at 03 34 42" src="https://user-images.githubusercontent.com/9460130/163903142-7cf14b18-67d5-49b7-953d-a223b084621c.png">
+
+There select your personal `Team` and change the `Signing Certificate` to `Development`.
+
+<img width="425" alt="Screen Shot 2022-04-19 at 03 32 23" src="https://user-images.githubusercontent.com/9460130/163903188-2ae2c683-9d31-4051-b08a-57a59d44df5e.png">
 
 Previews should now work in most views.
