@@ -10,6 +10,8 @@ Every programmer has their own preference on what coding style to use. But when 
 
 We currently are targeting `macOS 12` since it enables us to use many crucial new `SwiftUI` libraries. But we don't see this as a problem since once we reach the final release stage `macOS 13` will most likely be out already. Further most developers tend to keep their machines on the latest firmware version anyways - if not even firmware in beta stage.
 
+------
+
 ## Basics
 
 We use the standard code style used in the [Swift Language Guide](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html). If you're not familiar please have a read!
@@ -18,11 +20,15 @@ We use the standard code style used in the [Swift Language Guide](https://docs.s
 
 In CodeEdit we decided to use `Spaces` instead of `Tabs`. A `\t` will be translated into `4` spaces. This is setup in our projects settings and must not be changed.
 
+------
+
 ### `var` vs. `let`
 
 We encourage you to use `let foo = ...` over `var foo = ...` wherever possible.
 
 This is to make clear to others whether a value will change or not.
+
+------
 
 ### `guard` over `if`
 
@@ -41,6 +47,8 @@ guard fruits.isEmpty else { return }
 // do stuff here
 ```
 
+------
+
 ### Don't force-unwrap
 
 Force-unwrapping `Optional` values is never a good practice since the app will crash when it fails.
@@ -54,6 +62,8 @@ if let foo = foo {
 ```
 
 In case of optional chaining you can easily use this: `foo?.someFunctionCall()`.
+
+------
 
 ### Implicit `return` and `get`
 
@@ -73,17 +83,23 @@ var someProperty: String {
 }
 ```
 
+------
+
 ### Access Control
 
 Properties in a `class` or `struct` should be considered `private` unless they need to be either `internal` or `public`.
 
 In a `struct` create a designated `init` and set the `private` properties there.
 
+------
+
 ### Naming Conventions
 
 Naming your properties and functions/methods appropriately is very important so people understand what they are doing.
 
 Instead of `var n: Int = 4` use `var number: Int = 4`.
+
+------
 
 ### Function Headers
 
@@ -97,6 +113,8 @@ func addNumber(number: Int, toNumber: Int) {}
 func addNumber(_ num1: Int, to num2: Int) {}
 ```
 
+------
+
 ### Documentation
 
 Before submitting a pull request, make sure your code is well documented.
@@ -106,15 +124,21 @@ Before submitting a pull request, make sure your code is well documented.
 
 > To add documentation blocks `⌘ + click` on the name of the desired type and select `Add Documentation`.
 
+------
+
 ### Use Modules
 
 When implementing a new feature please create a new standalone module in `CodeEditModules`. See [Project Structure](./Getting-Started#project-structure) for more information.
+
+------
 
 ### Remove Comments and `print`
 
 In your final code there should not be any commented code or `print()` statements. Please remove them.
 
 Same goes for `// swiftlint:disable` comments.
+
+------
 
 ### External Dependencies
 
@@ -123,6 +147,28 @@ We only use a handful of external libraries. Don't add external dependencies wit
 This is because we want to keep our dependencies as slim as possible. In certain cases it might make sense to use an external library though.
 
 > Keep in mind that most of UI related extensions or convenience methods can easily be implemented in a internal module/package.
+
+------
+
+### View Models
+
+When having more than a couple of state changing variables (`@State`) in a `SwiftUI` view, create a specific `ViewModel` for that view which will handle all the logic (MVVM).
+
+It is always good practice to keep logic and UI separated.
+
+Properties can then be marked as `@Published` and be observed via the `ViewModels` instance in the view.
+
+------
+
+### Function Body Length
+
+Don't go wild and put a ton of logic in a single `function`. Break it up into smaller sections where it makes sense.
+
+This is especially important in `SwiftUI` views. Create subviews instead!
+
+By breaking up the code into smaller chunks it is much easier to understand the overall structure and flow.
+
+------
 
 ## SwiftLint
 
