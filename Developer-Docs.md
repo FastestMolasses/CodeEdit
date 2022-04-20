@@ -13,3 +13,7 @@ After Xcode is done building the documentation it should pop right up. If not ju
 There the documentation should appear right on top in the left sidebar.
 
 ![Developer Documentation in Sidebar](https://user-images.githubusercontent.com/9460130/162333333-5c031963-e02f-43d2-9c33-388bb14c48bc.png)
+
+## Online
+
+> The documentation is not yet available online. We are planning on publishing our developer documentation here on GitHub at some stage.
