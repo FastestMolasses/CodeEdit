@@ -10,6 +10,7 @@ Here we will create guides to get you started contributing to CodeEdit.
 * [Code Style](./Code-Style)
 * [Contribution Guide](https://github.com/CodeEditApp/CodeEdit/blob/main/CONTRIBUTING.md)
 * [Developer Docs](./Developer-Docs)
+* [Theme Structure](./Theme-Structure)
 * [Terminology](./Terminology)
 * [Troubleshooting](./Troubleshooting)
 
