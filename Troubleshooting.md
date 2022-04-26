@@ -54,7 +54,7 @@ When working on a specific module in `CodeEditModules` just change the run targe
 
 ![Select Run Target](https://user-images.githubusercontent.com/9460130/163902910-d99487b0-e7cd-4948-84d8-061c864b93d7.png)
 
-### Previews in `CodeEdit``
+### Previews in `CodeEdit`
 
 When working on the main target of CodeEdit it becomes a little more complicated: Go to `CodeEdit > Targets > CodeEdit > Signing & Capabilities > Signing`.
 
