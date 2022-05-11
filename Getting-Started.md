@@ -2,6 +2,9 @@
 
 Welcome to our guide to getting started on contributing to CodeEdit. This guide will help you understand the basic structure of the app and where to begin with. If you get stuck somewhere please have a look at the [troubleshooting](./Troubleshooting) section or join the discussion on our [Discord Server](https://discord.gg/vChUXVf9Em).
 
+> ⚠️ If you're just starting out with **Swift** we highly recommend checking out [**100 Days of Swift**](https://www.hackingwithswift.com/100) and [**100 Days of SwiftUI**](https://www.hackingwithswift.com/100/swiftui) by [Paul Hudson](https://twitter.com/twostraws) to get a basic understanding of mastering Swift and the SwiftUI framework!
+> Also check out our `#swift-beginners` channel on our [Discord Server](https://discord.gg/vChUXVf9Em)
+
 ## Fork and Clone
 
 In order to contribute you first have to fork the repository by tapping the **Fork** button on the top left. This will create a copy in your own repository list.
