@@ -5,7 +5,7 @@
 It's possible that the project will not build at first try. This might be due to caching issues of some sort.
 Please try the following steps in sequential order:
 
-1. Make sure you are on `macOS 12` or later as well as `Xcode 13.3` or later
+1. Make sure you are on `macOS 12.4` or later as well as `Xcode 13.4` or later
 2. Clean the build folder (**⇧⌘K**)
 3. Reset package caches using `File > Packages > Reset Package Caches`
 4. Clear the `DerivedData` folder which is usually located in `~/Library/Developer/Xcode`
