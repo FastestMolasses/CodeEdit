@@ -16,4 +16,6 @@ There the documentation should appear right on top in the left sidebar.
 
 ## Online
 
-> The documentation is not yet available online. We are planning on publishing our developer documentation here on GitHub at some stage.
+- [`CodeEditTextView`](https://codeeditapp.github.io/CodeEditTextView/documentation/codeedittextview/)
+
+> The documentation is not yet fully available online. We are planning on publishing our developer documentation here on GitHub at some stage.
