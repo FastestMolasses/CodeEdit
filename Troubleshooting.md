@@ -8,10 +8,11 @@ Please try the following steps in sequential order:
 1. Make sure you are on `macOS 12.4` or later as well as `Xcode 13.4` or later
 2. Clean the build folder (**⇧⌘K**)
 3. Reset package caches using `File > Packages > Reset Package Caches`
-4. Clear the `DerivedData` folder which is usually located in `~/Library/Developer/Xcode`
-5. Make sure `SwiftLint` is installed on your machine. See [SwiftLint](./Code-Style#swiftlint) for more information.
-6. Restart Xcode.
-7. Restart your Mac.
+4. Update to latest package versions using `File > Packages > Update to latest Package versions`
+5. Clear the `DerivedData` folder which is usually located in `~/Library/Developer/Xcode`
+6. Make sure `SwiftLint` is installed on your machine. See [SwiftLint](./Code-Style#swiftlint) for more information.
+7. Restart Xcode.
+8. Restart your Mac.
 
 If none of the above mentioned steps work please have a chat with us in the `help` channel on our [Discord Server](https://discord.gg/vChUXVf9Em).
 
