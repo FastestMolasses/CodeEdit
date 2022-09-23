@@ -182,6 +182,14 @@ All you have to do is installing it using [Homebrew](http://brew.sh/):
 brew install swiftlint
 ```
 
+### Update
+
+Make sure you have a recent release of `SwiftLint` installed. To update simply run:
+
+```bash
+brew update && brew upgrade swiftlint
+```
+
 ### Configuration
 
 We basically use the standard configuration with a handful of changes. Our current configuration looks like this:
