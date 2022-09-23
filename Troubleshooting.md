@@ -26,7 +26,9 @@ Also make sure that `SwiftLint` is updated. An outdated version can result in fa
 
 To update `SwiftLint` on your machine:
 
-> `brew update && brew upgrade swiftlint`
+```bash
+brew update && brew upgrade swiftlint
+```
 
 ### Trailing Whitespace Violation
 
