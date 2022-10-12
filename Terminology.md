@@ -1,6 +1,6 @@
 # Terminology
 
-<img width="1012" alt="ui-diagram" src="https://user-images.githubusercontent.com/806104/195379010-7a75d9ee-e414-45e4-87ac-107ac2cb99fd.png">
+<img width="1012" alt="ui-diagram" src="https://user-images.githubusercontent.com/806104/195379883-ebafb0cd-905f-42cd-90e5-2032444f9c3f.png">
 
 ## Overview
 
