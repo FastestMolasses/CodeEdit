@@ -1,5 +1,7 @@
 # Terminology
 
+<img width="1012" alt="ui-diagram" src="https://user-images.githubusercontent.com/806104/195379010-7a75d9ee-e414-45e4-87ac-107ac2cb99fd.png">
+
 ## Overview
 
 Please review  Apples own [terminology](https://developer.apple.com/design/human-interface-guidelines/macos/overview/visual-index/) to help you better understand our own.
