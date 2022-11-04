@@ -1,4 +1,4 @@
-Open CodeEdit windows can have various states depending on the circumstance. I'd like to outline my thoughts around window states and how they can change during the lifecycle of the file/project to get feedback from the community on this approach.
+Open CodeEdit windows can have various states depending on the circumstance. It is important to know about these window states and how they can change during the lifecycle of the file/project to get feedback from the community on this approach.
 
 Our goal is to provide a simple UI when creating or viewing individual files that can be scaled up if need be. Projects will have a more comprehensive UI to accommodate navigation and other project needs.
 
