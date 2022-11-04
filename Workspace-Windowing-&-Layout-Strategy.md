@@ -28,6 +28,7 @@ A Workspace is a space in which the user works on a particular project. Multiple
 
 The visibility of each of these UI components can be toggled and there are situations where some of these components will be hidden by default.
 
+To learn more see [Terminology](https://github.com/CodeEditApp/CodeEdit/wiki/Terminology).
 
 ## Creating a new file
 
