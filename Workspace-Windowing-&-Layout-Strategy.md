@@ -159,4 +159,4 @@ When the tab bar is hidden, the window title becomes the filename (instead of th
 
 ## Wrapping up
 
-In conclusion, I think this is the best approach to handle how our windows change according to the file/project lifecycle. Please let me know if I am missing something or if we could be handling this better. I have been wrong before and I hope that we can discuss this to either validate this usability pattern or come up with something even better. I look forward to your comments! 👀
+If there is anything missing or if we could be handling this better, please open a [discussion](https://github.com/CodeEditApp/CodeEdit/discussions).
