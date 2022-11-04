@@ -159,4 +159,4 @@ When the tab bar is hidden, the window title becomes the filename (instead of th
 
 ## Wrapping up
 
-If there is anything missing or if we could be handling this better, please open a [discussion](https://github.com/CodeEditApp/CodeEdit/discussions).
+If there is anything missing or if we could be handling this better, please comment on the our discussion [here](https://github.com/orgs/CodeEditApp/discussions/851).
