@@ -10,7 +10,7 @@ From here, the user can perform the following actions, each of which we will dis
 
 1. Create a new file
 2. Open a file
-3. Open a folder (cloning a repository will also in the end open a folder)
+3. Open a folder (cloning an existing project will also in the end open a folder)
 
 Once the user clicks one of these options, CodeEdit will open a Workspace.
 
