@@ -168,3 +168,9 @@ When the tab bar is hidden, the window title becomes the filename (instead of th
 ## Wrapping up
 
 If there is anything missing or if we could be handling this better, please comment on the our discussion [here](https://github.com/orgs/CodeEditApp/discussions/851).
+
+## Related Issues
+
+- [Drag Tab to Create New Window #670](https://github.com/CodeEditApp/CodeEdit/issues/670)
+- [Split Editors #338](https://github.com/CodeEditApp/CodeEdit/issues/338)
+- [Split Sidebar Panels #479](https://github.com/CodeEditApp/CodeEdit/issues/479)
