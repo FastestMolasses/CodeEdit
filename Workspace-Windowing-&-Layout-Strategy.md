@@ -46,7 +46,7 @@ Alternatively, the user can drag a folder onto an empty window to open the folde
 
 When the folder is dropped, the Navigator is revealed to show the folders tree.
 
-![image](https://user-images.githubusercontent.com/806104/200097432-d23df83b-8a61-497d-a3ff-080eeee65fd8.png)
+![image](https://user-images.githubusercontent.com/806104/200097462-68368bf3-92e4-457f-83f7-d5b6f4e18e9e.png)
 
 ## Opening an existing file
 
