@@ -40,6 +40,14 @@ The user can then show the Navigator sidebar and they will see a zero-state in p
 
 ![image](https://user-images.githubusercontent.com/806104/199525116-7207a0ed-0975-4f2c-88c3-19afed4a1484.png)
 
+Alternatively, the user can drag a folder onto an empty window to open the folder as well.
+
+![image](https://user-images.githubusercontent.com/806104/200097247-0204968b-5a8f-4229-955c-fc9bdbd743cf.png)
+
+When the folder is dropped, the Navigator is revealed to show the folders tree.
+
+![image](https://user-images.githubusercontent.com/806104/200097432-d23df83b-8a61-497d-a3ff-080eeee65fd8.png)
+
 ## Opening an existing file
 
 If the user opens an existing file or saves a newly created file, it might look like this.
