@@ -93,6 +93,30 @@ In a `struct` create a designated `init` and set the `private` properties there.
 
 ------
 
+### Parameter Alignment
+
+When breaking up your parameters of functions/methods or type initializers into multiple lines we recommend to also put the first parameter on a new line as well. This enhances readability and structure.
+
+```swift
+/* Don't use this */
+func aVeryLongFunctionName(_ with: String, 
+                           multiple: Int, 
+                           parameters: [String]) -> Bool {
+    // function body
+}
+
+/* Use this instead */
+func aVeryLongFunctionName(
+    _ with: String, 
+    multiple: Int, 
+    parameters: [String]
+) -> Bool {
+    // function body
+}
+```
+
+------
+
 ### Naming Conventions
 
 Naming your properties and functions/methods appropriately is very important so people understand what they are doing.
@@ -123,12 +147,6 @@ Before submitting a pull request, make sure your code is well documented.
 * Add `Swift` documentation to all public `struct`, `class`, `enum`, `var/let` and `func` declarations.
 
 > To add documentation blocks `⌘ + click` on the name of the desired type and select `Add Documentation`.
-
-------
-
-### Use Modules
-
-When implementing a new feature please create a new standalone module in `CodeEditModules`. See [Project Structure](./Getting-Started#project-structure) for more information.
 
 ------
 
