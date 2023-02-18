@@ -13,20 +13,20 @@ After you forked the repository you can clone your fork to your local machine. F
 
 ## Open the Project in Xcode
 
-> **Important:** Make sure you have at least `macOS 12 Monterey` installed since our deployment target is `macOS 12`. Otherwise the project will not build and run properly!
+> **Important:** Make sure you have at least `macOS 13 Ventura` installed since our deployment target is `macOS 13`. Otherwise the project will not build and run properly!
 
 In order to contribute you first have to understand roughly how everything works together in our project.
 First of all you need to open the directory where you cloned the repository to in Finder. Inside that directory you will find a couple of files and sub-directories.
 
 You want to open the `CodeEdit.xcodeproj` file in Xcode.
 
-![CodeEdit.xcworkspace](https://user-images.githubusercontent.com/9460130/158924759-42a61d23-4961-4bfb-8d44-930ec2427f0f.png)
+![CodeEdit.xcodeproj](https://user-images.githubusercontent.com/1364843/219864053-7eed048a-5dca-471f-b34e-26e9d0774fab.png)
 
 ## Project Structure
 
 After opening the project in Xcode you will find some top level folders but the one that is the most important is `CodeEdit`.
 
-`CodeEdit` is the main app target which we use to build and run the app. It contains all the necessary assets, configurations, and initialization code to build the app. Its top level folders contain code that is general or reusable for the code in the `Features` folder. CodeEdit is using the "Package by feature" opposed to "Package by layer". 
+`CodeEdit` is the main app target which we use to build and run the app. It contains all the necessary assets, configurations, and initialization code to build the app. Its top level folders contain code that is general or reusable for the code in the `Features` folder. CodeEdit is structured using the "Package by feature" opposed to "Package by layer".
 
 ### Features
 
