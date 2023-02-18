@@ -87,7 +87,19 @@ var someProperty: String {
 
 ### Access Control
 
-Properties in a `class` or `struct` should be considered `private` unless they need to be either `internal` or `public`.
+Functions and properties in a `class` or `struct` should be considered `private` unless they need to be either `internal` or `public`.
+
+When an `entity` (Which can be a `property`, `struct`, `class` or `func`) should be `internal`, do not explicitly mark it, in Swift every `entity` is implicitly `internal`.
+
+```swift
+/* Don't use this */
+internal struct Hello {}
+
+/* Use this instead */
+struct Hello {}
+```
+
+When working on the CodeEdit main codebase, do not mark any `entity` as public. CodeEdit should not and cannot be used as library.
 
 In a `struct` create a designated `init` and set the `private` properties there.
 
@@ -122,6 +134,21 @@ func aVeryLongFunctionName(
 Naming your properties and functions/methods appropriately is very important so people understand what they are doing.
 
 Instead of `var n: Int = 4` use `var number: Int = 4`.
+
+------
+
+### Attributes
+
+Place `attributes` above the `entity` on which you apply it. Not in front of it. 
+
+```swift
+/* Don't use this*/
+@State var number: Int = 4
+
+/* Use this instead */
+@State
+var number: Int = 4
+```
 
 ------
 
