@@ -8,7 +8,7 @@ Every programmer has their own preference on what coding style to use. But when 
 
 `CodeEdit` is entirely written using `Swift`. We decided to choose `SwiftUI` for most parts of the app where it makes sense. Though some parts require the implementation of `AppKit` code due to mostly customizability and performance reasons.
 
->We currently are targeting `macOS 12` since it enables us to use many crucial new `SwiftUI` libraries. But we don't see this as a problem since once we reach the final release stage `macOS 13` will most likely be out already. Further most developers tend to keep their machines on the latest firmware version anyways - if not even firmware in beta stage.
+>We currently are targeting `macOS 13` since it enables us to use `ExtensionKit' and many crucial new `SwiftUI` libraries. But we don't see this as a problem since once we reach the final release stage `macOS 13` will most likely be standard. Further, most developers tend to keep their machines on the latest firmware version anyways - if not even firmware in beta stage.
 
 ------
 
