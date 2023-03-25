@@ -107,7 +107,7 @@ In a `struct` create a designated `init` and set the `private` properties there.
 
 ### Parameter Alignment
 
-When breaking up your parameters of functions/methods or type initializers into multiple lines we recommend to also put the first parameter on a new line as well. This enhances readability and structure.
+When breaking up your parameters of functions/methods or type initializers into multiple lines we recommend to also put the first parameter on a new line as well. This enhances readability and structure. This also applies to multiline array initializations.
 
 ```swift
 /* Don't use this */
