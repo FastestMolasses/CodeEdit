@@ -142,7 +142,7 @@ Instead of `var n: Int = 4` use `var number: Int = 4`.
 Place `attributes` above the `entity` on which you apply it. Not in front of it. 
 
 ```swift
-/* Don't use this*/
+/* Don't use this */
 @State var number: Int = 4
 
 /* Use this instead */
@@ -157,7 +157,7 @@ var number: Int = 4
 Reduce redundancy in function headers whenever possible.
 
 ```swift
-/* Don't use this*/
+/* Don't use this */
 func addNumber(number: Int, toNumber: Int) {}
 
 /* Use this instead */
