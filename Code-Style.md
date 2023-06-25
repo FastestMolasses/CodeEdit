@@ -139,15 +139,23 @@ Instead of `var n: Int = 4` use `var number: Int = 4`.
 
 ### Attributes
 
-Place `attributes` above the `entity` on which you apply it. Not in front of it. 
+Placement of `attributes` is followed by the default behavior of SwiftLint. See [here](https://realm.github.io/SwiftLint/attributes.html). Be mind full to create whitespaces when a variable has an `attribute` placed above it.
 
 ```swift
-/* Don't use this */
-@State var number: Int = 4
+/* Valid example */
+@Binding var number2: Int = 5
+@State private var number1: Int = 4
 
-/* Use this instead */
+@Environment(\.color)
+private var color
+
+/* Invalid example */
 @State
-var number: Int = 4
+private var number: Int = 4
+@Binding
+var number2: Int = 5
+@Environment(\.color) private var color
+
 ```
 
 ------
