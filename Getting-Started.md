@@ -32,7 +32,7 @@ After opening the project in Xcode you will find some top level folders but the 
 
 <img width="1012" alt="ui-diagram" src="https://user-images.githubusercontent.com/806104/195441086-a19e34be-2c4e-4457-b265-74930da03475.png">
 
-The `Features` folder pretty self descriptive. The above diagram is used a reference to help decide in what folders the features are split. When you are writing new code, always check there is already a feature folder for it that it belongs in. Otherwise just create a new folder for it. (In case you don't know if it's a new feature or not, feel free to ask in the Discord or just create a PR and then other developers can comment)
+The `Features` folder is pretty self descriptive. The above diagram is used as a reference to help decide in what folders the features are split. When you are writing new code, always check there is already a feature folder for it that it belongs in. Otherwise just create a new folder for it. (In case you don't know if it's a new feature or not, feel free to ask in the Discord or just create a PR and then other developers can comment)
 
 Every feature should be structure as "Package by layer" which looks something like this:
 
