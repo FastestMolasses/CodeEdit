@@ -54,6 +54,7 @@
 		2B7AC06B282452FB0082A5B8 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B7AC06A282452FB0082A5B8 /* Media.xcassets */; };
 		2BE487EF28245162003F3F64 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE487EE28245162003F3F64 /* FinderSync.swift */; };
 		2BE487F428245162003F3F64 /* OpenWithCodeEdit.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2BE487EC28245162003F3F64 /* OpenWithCodeEdit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		30FDE8D02A9EECE500595A1D /* Components in Resources */ = {isa = PBXBuildFile; fileRef = 30FDE8CF2A9EECE500595A1D /* Components */; };
 		3E0196732A3921AC002648D8 /* codeedit_shell_integration.zsh in Resources */ = {isa = PBXBuildFile; fileRef = 3E0196722A3921AC002648D8 /* codeedit_shell_integration.zsh */; };
 		3E01967A2A392B45002648D8 /* codeedit_shell_integration.bash in Resources */ = {isa = PBXBuildFile; fileRef = 3E0196792A392B45002648D8 /* codeedit_shell_integration.bash */; };
 		474397C52893AC4B00518C8C /* codeedit-midnight.json in Resources */ = {isa = PBXBuildFile; fileRef = 474397C42893AC4B00518C8C /* codeedit-midnight.json */; };
@@ -515,6 +516,7 @@
 		2BE487EC28245162003F3F64 /* OpenWithCodeEdit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OpenWithCodeEdit.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE487EE28245162003F3F64 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		2BE487F028245162003F3F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30FDE8CF2A9EECE500595A1D /* Components */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Components; sourceTree = "<group>"; };
 		3E0196722A3921AC002648D8 /* codeedit_shell_integration.zsh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = codeedit_shell_integration.zsh; sourceTree = "<group>"; };
 		3E0196792A392B45002648D8 /* codeedit_shell_integration.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = codeedit_shell_integration.bash; sourceTree = "<group>"; };
 		474397C42893AC4B00518C8C /* codeedit-midnight.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "codeedit-midnight.json"; sourceTree = "<group>"; };
@@ -2256,6 +2258,7 @@
 		B658FB2E27DA9E0F00EA4DBD /* CodeEdit */ = {
 			isa = PBXGroup;
 			children = (
+				30FDE8CF2A9EECE500595A1D /* Components */,
 				3E0196712A392170002648D8 /* ShellIntegration */,
 				5831E3C52933E6CB00D5A6D2 /* Features */,
 				D7211D4427E066D4008F2ED7 /* Localization */,
@@ -2635,6 +2638,7 @@
 			files = (
 				283BDCBD2972EEBD002AFF81 /* Package.resolved in Resources */,
 				B658FB3727DA9E1000EA4DBD /* Preview Assets.xcassets in Resources */,
+				30FDE8D02A9EECE500595A1D /* Components in Resources */,
 				28A51006281701B40087B0CC /* codeedit-github-dark.json in Resources */,
 				3E0196732A3921AC002648D8 /* codeedit_shell_integration.zsh in Resources */,
 				28F43DE029738792008BBA45 /* codeedit-solarized-dark.json in Resources */,
