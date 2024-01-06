@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct Item: Identifiable {
+struct ListTableItem: Identifiable {
     let id = UUID()
     var name: String
 }
 
 struct ContentView: View {
-    @State private var items = [Item]()
+    @State private var items = [ListTableItem]()
     @State private var showingModal = false
-    @State private var selection: Item.ID?
+    @State private var selection: ListTableItem.ID?
 
     var body: some View {
         VStack {
@@ -45,8 +45,8 @@ struct ContentView: View {
             Spacer()
         }
         .sheet(isPresented: $showingModal) {
-            NewItemView { text in
-                items.append(Item(name: text))
+            NewListTableItemView { text in
+                items.append(ListTableItem(name: text))
                 showingModal = false
             }
         }
@@ -54,14 +54,13 @@ struct ContentView: View {
     }
 
     private func removeItem() {
-        if let selectedId = selection {
-            items.removeAll(where: { $0.id == selectedId })
-            selection = nil
-        }
+        guard let selectedId = selection else { return }
+        items.removeAll(where: { $0.id == selectedId })
+        selection = nil
     }
 }
 
-struct NewItemView: View {
+struct NewListTableItemView: View {
     @State private var text = ""
     var completion: (String) -> Void
 
@@ -80,7 +79,7 @@ struct NewItemView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ListTablePreview: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(DebugAreaTabViewModel())
