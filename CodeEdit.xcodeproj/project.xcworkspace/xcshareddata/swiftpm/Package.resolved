@@ -28,30 +28,12 @@
       }
     },
     {
-      "identity" : "codeeditsourceeditor",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/CodeEditApp/CodeEditSourceEditor.git",
-      "state" : {
-        "revision" : "e08a43ea07861e42d42f317899df69bf8f0a0a54",
-        "version" : "0.7.0"
-      }
-    },
-    {
       "identity" : "codeeditsymbols",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/CodeEditApp/CodeEditSymbols",
       "state" : {
         "revision" : "26cab264914f2648ab70ab6833eef331c2f3a38a",
         "version" : "0.1.4"
-      }
-    },
-    {
-      "identity" : "codeedittextview",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/CodeEditApp/CodeEditTextView.git",
-      "state" : {
-        "revision" : "6abce20f1827a3665a5159195157f592352e38b4",
-        "version" : "0.7.1"
       }
     },
     {
@@ -140,8 +122,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mattmassicotte/MainOffender",
       "state" : {
-        "revision" : "343cc3797618c29b48b037b4e2beea0664e75315",
-        "version" : "0.1.0"
+        "revision" : "750730d33acec0f79edc836221937389e7455bae",
+        "version" : "0.2.0"
       }
     },
     {

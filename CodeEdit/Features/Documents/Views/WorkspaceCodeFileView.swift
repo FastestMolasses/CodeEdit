@@ -40,6 +40,9 @@ struct WorkspaceCodeFileView: View {
             }
             Spacer()
                 .onAppear {
+                    // TODO: THIS ONLY APPEARS WHEN FIRST LOADING THE APPLICATION
+                    // NOT WHEN WE DOUBLE CLICK A FILE!!!!!
+                    // IT ONLY APPEARS ON FILES THAT WERE ALREADY OPENED UP BEFORE THE EDITOR CLOSED
                     Task.detached {
                         let contentType = try await file.url.resourceValues(forKeys: [.contentTypeKey]).contentType
                         let codeFile = try await CodeFileDocument(

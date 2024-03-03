@@ -41,6 +41,8 @@ final class CEWorkspaceFile: Codable, Comparable, Hashable, Identifiable, Editor
     /// Returns the file name (e.g.: `Package.swift`)
     var name: String { url.lastPathComponent }
 
+    // TODO: `type` refers to a file extension but the class is supposed to be file type agnostic
+    // TODO: FileType should refer to File, Directory, SymbolicLink. `FileIcon.FileType` should be `FileIcon.FileExtension`
     /// Returns the extension of the file or an empty string if no extension is present.
     var type: FileIcon.FileType { .init(rawValue: url.pathExtension) ?? .txt }
 
@@ -245,5 +247,4 @@ final class CEWorkspaceFile: Codable, Comparable, Hashable, Identifiable, Editor
         hasher.combine(url)
         hasher.combine(id)
     }
-
 }

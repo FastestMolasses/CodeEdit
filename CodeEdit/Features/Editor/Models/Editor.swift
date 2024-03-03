@@ -154,11 +154,12 @@ final class Editor: ObservableObject, Identifiable {
             break
         }
 
-        do {
-            try openFile(item: item)
-        } catch {
-            print(error)
-        }
+        // TODO: NEEDED?
+//        do {
+//            try openFile(item: item)
+//        } catch {
+//            print(error)
+//        }
     }
 
     /// Opens a tab in the editor.

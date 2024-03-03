@@ -38,6 +38,11 @@ final class CodeFileDocument: NSDocument, ObservableObject, QLPreviewItem {
     /// Document-specific overriden line wrap preference.
     @Published var wrapLines: Bool?
 
+    // TODO: https://developer.apple.com/documentation/appkit/nsdocument/1515216-canconcurrentlyreaddocuments
+//    override class func canConcurrentlyReadDocuments(ofType typeName: String) -> Bool {
+//        return true
+//    }
+
     /*
      This is the main type of the document.
      For example, if the file is end with '.png', it will be an image,
@@ -125,9 +130,34 @@ final class CodeFileDocument: NSDocument, ObservableObject, QLPreviewItem {
 
     /// This function is used for decoding files.
     /// It should not throw error as unsupported files can still be opened by QLPreviewView.
-    override func read(from data: Data, ofType _: String) throws {
-        guard let content = String(data: data, encoding: .utf8) else { return }
-        self.content = content
+    override func read(from url: URL, ofType _: String) throws {
+        let chunkSize = 4096
+
+        do {
+            var chunks = Data()
+            let fileHandle = try FileHandle(forReadingFrom: url)
+            defer {
+                try? fileHandle.close()
+            }
+
+            content.removeAll()
+
+            while true {
+                let dataChunk = fileHandle.readData(ofLength: chunkSize)
+                if dataChunk.isEmpty {
+                    break
+                } else {
+                    chunks.append(dataChunk)
+                }
+            }
+
+            guard let content = String(data: chunks, encoding: .utf8) else { return }
+            self.content = content
+//            self.content = content.limited(to: 10_000)
+        } catch {
+            throw error
+        }
+//        Thread.sleep(forTimeInterval: 3.0)
     }
 
     /// Triggered when change occured
@@ -178,6 +208,16 @@ final class CodeFileDocument: NSDocument, ObservableObject, QLPreviewItem {
 
         func destroy() {
             self.textViewController = nil
+        }
+    }
+}
+
+extension String {
+    func limited(to maxLength: Int) -> String {
+        if self.count > maxLength {
+            return String(self.prefix(maxLength))
+        } else {
+            return self
         }
     }
 }

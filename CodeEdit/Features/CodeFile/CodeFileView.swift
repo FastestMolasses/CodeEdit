@@ -98,6 +98,10 @@ struct CodeFileView: View {
 
     @EnvironmentObject private var editor: Editor
 
+    @State private var testString: String = {
+        return String(repeating: "THIS IS A VERY LARGE STRING!!!\n", count: 1_000)
+    }()
+
     var body: some View {
         CodeEditSourceEditor(
             $codeFile.content,
@@ -110,6 +114,7 @@ struct CodeFileView: View {
             wrapLines: codeFile.wrapLines ?? wrapLinesToEditorWidth,
             cursorPositions: $codeFile.cursorPositions,
             useThemeBackground: useThemeBackground,
+            highlightProvider: nil,
             contentInsets: edgeInsets.nsEdgeInsets,
             isEditable: isEditable,
             letterSpacing: letterSpacing,
@@ -187,5 +192,32 @@ private extension SettingsData.TextEditingSettings.IndentOption {
         case .tab:
             return IndentOption.tab
         }
+    }
+}
+
+public class MockHighlightProvider: HighlightProviding {
+    public var identifier: String
+
+    public init(identifier: String) {
+        self.identifier = identifier
+    }
+
+    public func setUp(textView: HighlighterTextView, codeLanguage: CodeLanguage) {
+        // Setup logic (mocked, so it's empty for now)
+    }
+
+    public func applyEdit(textView: HighlighterTextView,
+                          range: NSRange,
+                          delta: Int,
+                          completion: @escaping ((IndexSet) -> Void)) {
+        // Apply edit logic (mocked, so just call completion with an empty IndexSet)
+        completion(IndexSet())
+    }
+
+    public func queryHighlightsFor(textView: HighlighterTextView,
+                                   range: NSRange,
+                                   completion: @escaping (([HighlightRange]) -> Void)) {
+        // Query highlights logic (mocked, so just call completion with an empty array)
+        completion([])
     }
 }

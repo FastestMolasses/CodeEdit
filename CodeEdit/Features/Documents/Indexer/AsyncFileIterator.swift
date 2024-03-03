@@ -33,6 +33,7 @@ struct AsyncFileIterator: AsyncSequence, AsyncIteratorProtocol {
             }
 
             let fileURL = fileURLs[currentIdx]
+            // TODO: GET CONTENTS FROM LSP DOCUMENT SERVICE
             if let content = try? String(contentsOf: fileURL) {
                 foundContent = TextFile(url: fileURL.standardizedFileURL, text: content)
             } else {
